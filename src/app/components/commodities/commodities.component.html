@@ -1,0 +1,16 @@
+<div class="row commodities">
+    <div class="col-12">
+        <h3 class="text-center mt-3">Metals</h3>  
+    </div>
+    <div class="col-12 mt-3 card-deck">
+        <div *ngFor="let commodity of commodities" class="col-lg-4 col-sm-12">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header pink"><img src="{{commodity.attributes.logo}}" alt="" class="mr-2">{{commodity.attributes.name}}</div>
+                <div class="card-body">
+                <h5 class="card-title">EUR  {{commodity.attributes.avg_price}}</h5>
+                <p class="card-text">Change Last 24h: {{commodity.attributes.change_24h}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

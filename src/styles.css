@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card-header {
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+    color:rgb(107, 102, 102)
+}
+
+
+h5{
+    color:rgb(119, 119, 240);
+}
+
+

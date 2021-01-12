@@ -1,0 +1,16 @@
+<div class="row fiats">
+    <div class="col-12">
+        <h3 class="text-center mt-3">Fiats</h3>  
+    </div>
+    <div class="col-12 mt-3 card-deck">
+        <div *ngFor="let fiat of fiats"class="col-lg-4 col-sm-12">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header yellow"><img src="{{fiat.attributes.logo}}" alt="" class="mr-2">{{fiat.attributes.name}}</div>
+                <div class="card-body">
+                <h5 class="card-title">{{fiat.attributes.symbol}}</h5>
+                <p class="card-text">EUR {{fiat.attributes.to_eur_rate}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

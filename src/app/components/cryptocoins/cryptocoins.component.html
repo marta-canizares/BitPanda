@@ -1,0 +1,16 @@
+<div class="row cryptocoins">
+    <div class="col-12">
+        <h3 class="text-center mt-3">Cryptocoins</h3>  
+    </div>
+    <div class="col-12 mt-3 card-deck">
+        <div *ngFor="let coins of cryptocoins" class="col-lg-4 col-sm-12">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header grey"><img src="{{coins.attributes.logo}}" alt="" class="mr-2">{{coins.attributes.name}}</div>
+                <div class="card-body">
+                <h5 class="card-title">EUR {{coins.attributes.avg_price}} </h5>
+                <p class="card-text">{{coins.attributes.symbol}}   {{coins.attributes.min_withdraw_eur}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

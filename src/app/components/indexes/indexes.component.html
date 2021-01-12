@@ -1,0 +1,16 @@
+<div class="row indexes">
+    <div class="col-12">
+        <h3 class="text-center mt-3">Indexes</h3>  
+    </div>
+    <div class="col-12 mt-3 card-deck">
+        <div *ngFor="let index of indexes"class="col-lg-4 col-sm-12">
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header grey"><img src="{{index.attributes.logo}}" alt="" class="mr-2">{{index.attributes.name}}</div>
+                <div class="card-body">
+                <h5 class="card-title">{{index.attributes.symbol}} </h5>
+                <p class="card-text">EUR {{index.attributes.change_24h_amount}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
