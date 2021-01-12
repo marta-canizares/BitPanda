@@ -8,7 +8,7 @@
                 <div class="card-header yellow"><img src="{{fiat.attributes.logo}}" alt="" class="mr-2">{{fiat.attributes.name}}</div>
                 <div class="card-body">
                 <h5 class="card-title">{{fiat.attributes.symbol}}</h5>
-                <p class="card-text">EUR {{fiat.attributes.to_eur_rate}}</p>
+                <p class="card-text">EUR {{fiat.attributes.to_eur_rate | number: '1.2-3'}}</p>
                 </div>
             </div>
         </div>

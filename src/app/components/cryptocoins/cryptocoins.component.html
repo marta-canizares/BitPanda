@@ -7,7 +7,7 @@
             <div class="card bg-light mb-3" style="max-width: 18rem;">
                 <div class="card-header grey"><img src="{{coins.attributes.logo}}" alt="" class="mr-2">{{coins.attributes.name}}</div>
                 <div class="card-body">
-                <h5 class="card-title">EUR {{coins.attributes.avg_price}} </h5>
+                <h5 class="card-title">EUR {{coins.attributes.avg_price | number: '1.2-3'}} </h5>
                 <p class="card-text">{{coins.attributes.symbol}}   {{coins.attributes.min_withdraw_eur}}</p>
                 </div>
             </div>
